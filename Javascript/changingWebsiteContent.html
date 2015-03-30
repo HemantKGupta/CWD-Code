@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learning Javascript</title>
+
+</head>
+<body>
+<button id="textChanger">Chnage the first div text</button>
+<div id="firstDiv">some text</div>
+
+<button id="textAppender">Chnage the second div text</button>
+<div id="secondDiv">second text</div>
+
+<button id="textCreator">Create the text for third div</button>
+<div id="thirdDiv"></div>
+
+<script type="text/javascript">
+    document.getElementById("textChanger").onclick = function()
+        {
+        document.getElementById("firstDiv").innerHTML="ncdowfw";
+         }
+
+    document.getElementById("textAppender").onclick = function()
+        {
+        document.getElementById("secondDiv").innerHTML = document.getElementById("secondDiv").innerHTML + " ncdowfw";
+        }
+
+    document.getElementById("textCreator").onclick = function()
+        {
+        document.getElementById("thirdDiv").innerHTML="new text";
+        }
+
+</script>
+</body>
+</html>

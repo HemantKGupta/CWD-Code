@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<form name="input"  method="get">
+    Username: <input type="text" id="test">
+    <input type="submit" id="sub">
+</form>
+<script type="text/javascript">
+    document.getElementById("sub").onclick = function(){
+        var numbers = /^[0-9]+$/;
+    if(document.getElementById("test").value.match(numbers))
+        {
+        alert("Correct");
+        }
+     else {
+        alert("Wrong");
+    }
+    }
+ </script>
+</body>
+</html>

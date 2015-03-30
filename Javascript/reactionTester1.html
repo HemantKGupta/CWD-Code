@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learning Javascript</title>
+
+    <style>
+        #box
+        {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="box"></div>
+
+    <script type="text/javascript">
+
+        function displayBlox()
+            {
+            var timeout = Math.floor(Math.random()*5000);
+            setTimeout(function()
+                {
+                //alert("done");
+                document.getElementById("box").style.display="block";
+                },timeout );
+        }
+
+        document.getElementById("box").onclick = function ()
+            {
+            this.style.display="none";
+            displayBlox();
+            }
+
+
+    </script>
+
+</body>
+</html>

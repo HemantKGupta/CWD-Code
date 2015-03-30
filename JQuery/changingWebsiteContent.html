@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Learning jQuery</title>
+
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+
+    <style>
+    #circle
+        {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="circle"></div>
+    <p id="para">Some text</p>
+
+    <iframe src="http://www.cnn.com"></iframe>
+
+<script>
+    $("#circle").click(function(){
+
+       alert($("p").html());
+       $("p").html("new text");
+
+    });
+
+    $("#circle").hover(function(){
+
+        $("iframe").attr("src","https://www.google.co.in/");
+
+    });
+
+
+</script>
+</body>
+</html>
